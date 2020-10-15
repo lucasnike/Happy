@@ -37,7 +37,8 @@ function OrphanagesMap() {
             >
                 {/* <TileLayer url="https://a.tile.openstrrtmap.org/{z}/{x}/{z}.png"/> */}
 
-                <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{z}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}/>
+                {/* <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{z}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}/> */}
+                <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}/>
             </Map>
 
             <Link to="/" className="create-orphanage">
